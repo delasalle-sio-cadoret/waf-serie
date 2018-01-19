@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #E9EBEE;
+}
+
+hr{
+	border-color: #ccc !important;
+	border-width: thin;
+}
+
+a{
+	color: #00b8ce;
+	text-decoration: none !important;
+}
+
+a:hover{
+	color: #2117e3;
+}
+
+.anchor{
+	padding-top: 45px;
+}
+
+.navbar-brand-padding{
+	padding-top: 10px;
+}
+
+.navbar-inverse{
+	border-bottom: none;
+	background-color: #333333 !important;
+}
+
+.scroll-to-top{
+	font-size: 12px;
+	font-weight: 600;
+	color: #00b8ce;
+}
+
+.jumbotron{
+	background-color: #F7F7F9;
+	margin-top: 50px
+}
+
+.jumbotron p{
+	font-weight: 400;
+}
+
+.skins-screenshots{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+ul.list{
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+.circle{
+	height: 12px;
+	width: 12px;
+	margin-right: 10px;
+	background-color: #667BF8;
+	border-radius: 50%;
+	display: inline-block
+}
+
+.circle.red{
+	background-color: #FF1818;
+}
+
+.circle.yellow{
+	background-color: #EBF909;
+}
+
+.circle.black{
+	background-color: #000000;
+}
+
+.circle.light-blue{
+	background-color: #0BF7DE;
+}
+
+.circle.purple{
+	background-color: #F70BEA;
+}
+
+.circle.green{
+	background-color: #40CB39;
+}
+
+footer{
+	background-color: #00b8ce;
+	width: 100%;
+	color: #E5E4EA;
+	padding-top: 10px;
+	padding-right: 20px;
+	font-size: 12px;
+	text-align: right;
+	position: absolute;
+}
+
+.img-overlay {
+    position: relative;
+    max-width: 600px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3B5998;
+	opacity: 0;
+    padding: 0px;
+	color: #fff;
+}
+
+.overlay:hover{
+	opacity: 0.8;
+}

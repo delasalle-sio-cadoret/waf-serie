@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mouldifi - Admin Theme Documentation</title>
+	
+	<!-- Site favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+	
+	<link href="css/prettify.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="js/html5shiv.js"></script>
+		  <script src="js/respond.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body class="documentation">
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-brand-padding" href="index.html" target="_blank"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+    </div>
+</div>
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Mouldifi - Responsive Admin Theme</h2>
+				
+                <p>Thank you for purchasing Mouldifi. If you have any questions about the template, please feel free to email us at <a href="mailto:info@g-axon.com">info@g-axon.com</a>.<br/><br/>
+                Thanks again!</p>
+                <small>
+                    <strong>Documentation created on:</strong> 06 Nov, 2016<br/>
+					<strong>Latest update:</strong> 18 Nov, 2017<br>
+					<strong>Theme Version:</strong> 5.0<br/>
+					<strong>By:</strong> <a href="http://g-axon.com/" title="G-axon website" target="_blank">G-axon</a><br/>
+				</small>
+            </div>
+            <div class="col-md-6">
+               <img src="img/preview.png" alt="Site Preview" title="Site Preview" class="img-responsive center-block">
+    		</div> 		
+         </div>
+        </div>
+</div>
+<!--/end of jumbotron -->
+	
+<!-- Main content -->
+	
+<div class="container">
+	<div class="row">
+   		<div class="col-lg-12">
+			<a id="index_table" class="anchor"></a>
+				<h2>Table of Contents</h2>
+					<ul>
+						<li><a href="#about_mouldifi">About MOULDIFI</a></li>
+						<li><a href="#basic_structure">Basic Structure</a></li>
+						<li><a href="#folder_structure">Folder Structure</a></li>
+						<li><a href="#layout_structure">Layout Structure</a></li>
+						<li><a href="#sidebar">Sidebar</a></li>
+						<li><a href="#fixed_sidebar">Fixed Sidebar</a></li>
+						<li><a href="#menu_levels">Menu Levels</a></li>
+						<li><a href="#skins">Skins</a></li>
+						<li><a href="#rtl_support">RTL support</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+    	</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<a id="about_mouldifi" class="anchor"></a>
+			<h3>About MOULDIFI&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+
+			<p>With MOULDIFI's clean and minimalistic design, you can create an elegant and powerful project. It is designed with passion and precision and is based on latest standards and recommendations. MOULDIFI is powered by Bootstrap v3 - the most popular front-end framework.<br/><br/>
+
+			This documentation is dedicated to the main element of the template. With each version, we will try our best to update it accordingly. But if you have any questions going beyond what is described here or wish to report any issues, please do not hesitate in contacting us.</p>
+			<hr>
+			
+<a id="basic_structure" class="anchor"></a>
+			<h3>Basic Structure&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+<p>
+    Basic strucutre representation
+</p>
+	
+<pre class="prettyprint linenums">
+
+	├── Page container
+		├── Page sidebar
+			├── Site header
+			├── end of Site header
+			├── Main navigation
+			├── end of Main navigation
+		├── end of page sidebar
+		├── Main container
+			├── Main header
+			├── end of Main header
+			├── Main content
+			├── Footer
+			├── end of Footer
+			├── end of Main content
+		├── end of Main container
+	├── end of Page container
+		
+</pre>
+<hr>
+
+
+	<div class="row">
+    		<a id="folder_structure" class="anchor"></a>
+    	<div class="col-md-6">
+        	<h3>Folder Structure</h3>
+        		<h4>Folders and files</h4>
+
+        		<div><pre class="prettyprint linenums">
+<code>MOULDIFI_admin_theme/
+
+├── <strong>light/</strong>
+    ├── <strong><i>css/</i></strong>
+	├── <strong><i>css/plugins/ (css files for used plugins)</i></strong>
+    ├── <strong><i>fonts/</i></strong>
+    ├── <strong><i>images/</i></strong>
+    ├── <strong><i>js/</i></strong>
+    ├── <strong><i>js/plugins/ (js files for used plugins)</i></strong>
+    ├── <strong><i>sass/</i></strong>
+    ├── alerts.html
+    ├── badges-label.html
+    ├── basic-tables.html
+    ├── blank-page.html
+    ├── breadcrumbs.html
+    ├── buttons.html
+    ├── cards-view.html
+    ├── collapsed-sidebar.html
+    ├── comments.html
+    ├── data-tables.html
+    ├── detailed_view.html
+        ...
+├── <strong>Dark/</strong>
+    ├── <strong><i>css/</i></strong>
+	├── <strong><i>css/plugins/ (css files for used plugins)</i></strong>
+    ├── <strong><i>fonts/</i></strong>
+    ├── <strong><i>images/</i></strong>
+    ├── <strong><i>js/</i></strong>
+    ├── <strong><i>js/plugins/ (js files for used plugins)</i></strong>
+    ├── <strong><i>sass/</i></strong>
+    ├── alerts.html
+    ├── badges-label.html
+    ├── basic-tables.html
+    ├── blank-page.html
+    ├── breadcrumbs.html
+    ├── buttons.html
+    ├── cards-view.html
+    ├── collapsed-sidebar.html
+    ├── comments.html
+    ├── data-tables.html
+    ├── detailed_view.html
+        ...
+</code></pre>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        <h3>Main HTML elements&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+
+        <p>Theme files have almost unchanging structure consisting of:</p>
+        <ol>
+            <li><code>.page-container</code> container for all body elements.</li>
+            <li><code>.page-sidebar .main-menu</code> container for sidebar navigation menu.</li>
+            <li><code>.site-header</code> container for site header.</li>
+			<li><code>.main-header</code> main container for header elements.</li>
+            <li><code>.main-container .main-content</code> container for entire content on the page</li>
+            <li><code>.footer-main</code> main container for footer.</li>
+        </ol>
+    </div>
+</div>
+			
+<div class="row">
+	<a id="layout_structure" class="anchor"></a>
+		<div class="col-lg-12">
+		<hr>	
+			<h3>Layout structure&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+
+				<p>Page <code>&lt;/head&gt;</code> contains Metadata, stylesheets and JS scripts.</p>
+
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+
+    &lt;!-- Metadata --&gt;	
+	&lt;meta charset="utf-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;meta name="description" content="Mouldifi - A fully responsive, HTML5 based admin theme"&gt;
+	&lt;meta name="keywords" content="Responsive, Web Application, HTML5, admin theme, Admin Template, business, professional, Mouldifi, web design, CSS3"&gt;
+	&lt;title>Mouldifi Responsive Admin Theme&lt;/title&gt;
+
+    &lt;!-- CSS and jQuery --&gt;
+	
+    &lt;!-- Entypo font stylesheet --&gt;
+	&lt;link href="css/entypo.css" rel="stylesheet"&gt;
+	
+    &lt;!-- Font awesome stylesheet --&gt;
+	&lt;link href="css/font-awesome.min.css" rel="stylesheet"&gt;
+
+    &lt;!-- Bootstrap stylesheet min version --&gt;
+	&lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+
+    &lt;!-- Mouldifi core stylesheet --&gt;
+	&lt;link href="css/mouldifi-core.css" rel="stylesheet"&gt;
+	
+	&lt;link href="css/mouldifi-forms.css" rel="stylesheet"&gt;
+
+	&lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+	&lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+	
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="js/html5shiv.js"&gt;&lt;/script&gt;
+	&lt;script src="js/respond.min.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+&lt;/head&gt;
+</pre>
+<hr>
+			
+<a id="sidebar" class="anchor"></a>
+<h3>Sidebar&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+<p>Sidebar navigation menu.</p>
+			
+<pre class="prettyprint linenums">
+    &lt;!-- Main navigation --&gt;
+	&lt;ul id="side-nav" class="main-menu navbar-collapse collapse"&gt;
+		...
+    &lt;!-- /main navigation --&gt;
+</pre>
+	
+<hr>
+<a id="fixed_sidebar" class="anchor"></a>
+<h3>Fixed Sidebar&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+<p>Fixed sidebar navigation menu.</p>
+			
+<pre class="prettyprint linenums">
+    &lt;!-- Page sidebar --&gt;
+	   
+	&lt;div class="sidebar-fixed"&gt;
+	
+		&lt;!-- Site header  --&gt;
+		&lt;header class="site-header"&gt;
+		  &lt;div class="site-logo"&gt;&lt;a href="index.html"&gt;&lt;img src="images/logo.png" alt="Mouldifi" title="Mouldifi"&gt;&lt;/a&gt;&lt;/div&gt;
+		  &lt;div class="sidebar-collapse hidden-xs"&gt;&lt;a class="sidebar-collapse-icon" href="#"&gt;&lt;i class="icon-menu"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+		  &lt;div class="sidebar-mobile-menu visible-xs"&gt;&lt;a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#"&gt;&lt;i class="icon-menu"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+		&lt;/header&gt;
+		&lt;!-- /site header --&gt;
+		
+		&lt;!-- Main navigation --&gt;
+		&lt;ul id="side-nav" class="main-menu navbar-collapse collapse"&gt;
+			&lt;li&gt;&lt;a href="index.html"&gt;&lt;i class="icon-gauge"&gt;&lt;/i&gt;&lt;span class="title"&gt;Dashboard&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="has-sub active"&gt;&lt;a href="collapsed-sidebar.html"&gt;&lt;i class="icon-layout"&gt;&lt;/i&gt;&lt;span class="title"&gt;Layouts&lt;/span&gt;&lt;/a&gt;
+				&lt;ul class="nav"&gt;
+					&lt;li&gt;&lt;a href="collapsed-sidebar.html"&gt;&lt;span class="title"&gt;Collapsed Sidebar&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li class="active"&gt;&lt;a href="fixed-sidebar.html"&gt;&lt;span class="title"&gt;Fixed Sidebar&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li class="has-sub"&gt;&lt;a href="panels.html"&gt;&lt;i class="icon-newspaper"&gt;&lt;/i&gt;&lt;span class="title"&gt;UI Elements&lt;/span&gt;&lt;/a&gt;
+				&lt;ul class="nav collapse"&gt;
+					&lt;li&gt;&lt;a href="panels.html"&gt;&lt;span class="title"&gt;Panels&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="buttons.html"&gt;&lt;span class="title"&gt;Buttons&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="typography.html"&gt;&lt;span class="title"&gt;Typography&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="tabs-accordions.html"&gt;&lt;span class="title"&gt;Tabs &amp; Accordions&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;	
+		...
+    &lt;!-- /page sidebar --&gt;
+</pre>
+<p><strong>Required class:<br/></strong>- sidebar-fixed <i>(as shown in the code above)</i></p>
+	
+<p><strong>Required files:<br/></strong>- perfect-scrollbar.css<br/>- perfect-scrollbar.jquery.min.js</p>
+<hr>
+
+	
+<a id="menu_levels" class="anchor"></a>
+<h3>Menu Levels&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+<p>Collapsible items in the sidebar menu list.</p>
+			
+<pre class="prettyprint linenums">
+    &lt;!-- Main navigation --&gt;
+	
+	&lt;ul id="side-nav" class="main-menu navbar-collapse collapse"&gt;
+			&lt;li&gt;&lt;a href="index.html"&gt;&lt;i class="icon-gauge"&gt;&lt;/i&gt;&lt;span class="title"&gt;Dashboard&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="has-sub active"&gt;&lt;a href="collapsed-sidebar.html"&gt;&lt;i class="icon-layout"&gt;&lt;/i&gt;&lt;span class="title"&gt;Layouts&lt;/span&gt;&lt;/a&gt;
+				&lt;ul class="nav"&gt;
+					&lt;li&gt;&lt;a href="collapsed-sidebar.html"&gt;&lt;span class="title"&gt;Collapsed Sidebar&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li class="active"&gt;&lt;a href="fixed-sidebar.html"&gt;&lt;span class="title"&gt;Fixed Sidebar&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li class="has-sub"&gt;&lt;a href="panels.html"&gt;&lt;i class="icon-newspaper"&gt;&lt;/i&gt;&lt;span class="title"&gt;UI Elements&lt;/span&gt;&lt;/a&gt;
+				&lt;ul class="nav collapse"&gt;
+					&lt;li&gt;&lt;a href="panels.html"&gt;&lt;span class="title"&gt;Panels&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="buttons.html"&gt;&lt;span class="title"&gt;Buttons&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="typography.html"&gt;&lt;span class="title"&gt;Typography&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					...
+				
+					&lt;li&gt;&lt;a href="detailed-view-2.html"&gt;&lt;span class="title"&gt;Detailed Action View&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li class="has-sub"&gt; 
+				&lt;a href="#/"&gt;&lt;i class="icon-flow-tree"&gt;&lt;/i&gt;&lt;span class="title"&gt;Menu Levels&lt;/span&gt;&lt;/a&gt; 
+				&lt;ul class="nav collapse"&gt; 
+					&lt;li&gt;&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 1.1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; 
+					&lt;li&gt;&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 1.2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; 
+					&lt;li class="has-sub"&gt;
+						&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 1.3&lt;/span&gt;&lt;/a&gt; 
+						&lt;ul class="nav collapse"&gt; 
+							&lt;li&gt;&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 2.1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; 
+							&lt;li class="has-sub"&gt;
+								&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 2.2&lt;/span&gt;&lt;/a&gt;
+								&lt;ul class="nav collapse"&gt; 
+									&lt;li class="has-sub"&gt; 
+										&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 3.1&lt;/span&gt;&lt;/a&gt; 
+										&lt;ul class="nav collapse"&gt; 
+											&lt;li&gt;&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 4.1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; 
+										&lt;/ul&gt; 
+									&lt;/li&gt; 
+									&lt;li&gt;&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 3.2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; 
+								&lt;/ul&gt;
+							&lt;/li&gt; 
+							&lt;li&gt;&lt;a href="#/"&gt;&lt;span class="title"&gt;Menu Level 2.3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; 
+						&lt;/ul&gt; 
+					&lt;/li&gt; 
+				&lt;/ul&gt; 
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		...
+    &lt;!-- /main navigation --&gt;
+</pre>
+<hr>
+	
+<h3>Content&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+<p>Main content wrapper with page content.</p>
+			
+<pre class="prettyprint linenums">
+    &lt;!-- Main content --&gt;
+    	&lt;div class="main-content"&gt;
+	        ...
+    &lt;!-- /main content --&gt;
+</pre>
+<hr>	
+
+<a id="skins" class="anchor"></a>
+<h3>Skins<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+<p>MOULDIFI comes in 2 different skins, i.e. Dark and Light. In order to change the theme color, you simply have to change the root folder from 'Light' to 'Dark' or vice-versa.</p>
+<p><a href="http://www.g-axon.com/mouldifi-4.0/" target="_blank">Click here</a> to see the preview.</p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 skins-screenshots">
+	<img src="img/light.png" class="img-responsive center-block">
+	<h4 class="text-center">Light</h4>
+</div>
+			
+<div class="col-xs-12 col-sm-6 skins-screenshots">
+	<img src="img/dark.png" class="img-responsive center-block">
+	<h4 class="text-center">Dark</h4>
+</div>
+</div>
+
+<hr>
+<div class="clearfix">
+	<a id="rtl_support" class="anchor"></a>
+	<h3>Right-to-Left Language Support <a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+	<p>Adding support for language written in a Right-To-Left (RTL) direction.</p>
+	<p>Change the value of lang attribute in html tag as per the language selection. Here is an example, where <strong>language_code</strong> needs to be replaced with the specific language's code like <strong class="text-danger">ar</strong> for Arabic.</p>
+<pre class="prettyprint linenums">
+&lt;html lang="language_code"&gt;
+...
+&lt;/html&gt;
+</pre>
+	<p>Following are two css files you will need to add AFTER all the other css files: </p>
+<pre class="prettyprint linenums">
+&lt;link href="css/bootstrap-rtl.min.css" rel="stylesheet"&gt;
+&lt;link href="css/integral-rtl-core.css" rel="stylesheet"&gt;
+</pre>
+<p>Bingo! you have RTL support in Integral now</p>
+<p><img src="img/rtl-support.jpg" alt="RTL Support" class="img-responsive"></p>
+</div>
+<hr>
+<a id="contact" class="anchor"></a>
+<h3>Contact&nbsp;<a href="#index_table" class="pull-right scroll-to-top">Return to index</a></h3>
+<p><a href="mailto:info@g-axon.com">Click here</a> to email us. We will be more than happy to respond and help to the best of our ability.</p>
+<br/><br/>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="text-center">
+  <p><small>&copy; G-axon 2016 | MOULDIFI Admin Theme</small></p>
+</footer>	
+	
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/prettify.js"></script>	
+<script>
+    $(function () {
+        window.prettyPrint && prettyPrint();
+    })
+</script>
+
+
+</body>
+</html>
